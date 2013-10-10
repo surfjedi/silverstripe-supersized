@@ -8,19 +8,20 @@
 		<link rel="shortcut icon" href="/favicon.ico" />
 				<link rel="stylesheet" href="supersized/css/supersized.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
-			</head>
-<body>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	</head>
+		<body>
 
 
 				  $Layout
 
 		
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
   
 
 
 
-					<script type="text/javascript">
+		<script type="text/javascript">
 			
 			jQuery(function($){
 				
