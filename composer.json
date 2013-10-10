@@ -13,7 +13,8 @@
 	"require":
 	{
 		"silverstripe/framework": "~3.0",
-		"composer/installers": "*"
+		"composer/installers": "*",
+		"UndefinedOffset/SortableGridField": "*"
 		
 	},
 	"minimum-stability": "dev"
