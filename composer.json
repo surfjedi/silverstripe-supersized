@@ -1,0 +1,20 @@
+{
+	"name": "surfjedi/supersized",
+	"description": "A silverstripe module to make a whole page slide show with jquery supersized ",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "supersize", "gallery", "image"],
+	"authors": [
+	{
+		"name": "Lee Blazek",
+		"email": "info@berzerk.co.nz"
+	}
+	],
+
+	"require":
+	{
+		"silverstripe/framework": "~3.0",
+		"composer/installers": "*"
+		
+	},
+	"minimum-stability": "dev"
+}
