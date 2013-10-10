@@ -33,32 +33,34 @@ class SuperSizePage extends Page {
 
 //for CMS mod
 function getCMSFields() { 
-		$manager = new ImageDataObjectManager(
-		            $this, // Controller
-		            'Images', // Source name
-		            'ImageResource', // Source class
-		            'Attachment', // File name on DataObject
-		            array(
-		                'Title' => 'Title', 
-		                'Caption' => 'Caption'
-		            ), // Headings 
-		            'getCMSFields_forPopup' // Detail fields
-		            // Filter clause
-		            // Sort clause
-		            // Join clause
-		        );
+
 		$fields = parent::getCMSFields(); 
-		
-		
+
+		$config = GridFieldConfig_RelationEditor::create(10);
+		$config->addComponent(new GridFieldSortableRows('SortID'));
+        // Set the names and data for our gridfield columns
 /*
-		$fields->addFieldToTab('Root.Content.FirstCol', new ImageField('Photo', 'First Column Image'));
-	
-		$fields->addFieldToTab('Root.Content.FirstCol', new HtmlEditorField('Text1', 'First Column Text'));
+        $config->getComponentByType('GridFieldDataColumns')->setDisplayFields(array(
+            'Images' => 'Images',
+            'Title' => 'Title',
+            'Attachment' => 'Attachement'
+            'Project.Title'=> 'Project' // Retrieve from a has-one relationship
+        )); 
 */
+        // Create a gridfield to hold the Image relationship    
+        $imagesField = new GridField(
+            'Images', // Field name
+            'ImageResource', // Field title
+            $this->Images(), // List of all related images
+            $config
+        );      
+        // Create a tab named "gallery" and add our field to it
+        $fields->addFieldToTab('Root.Gallery', $imagesField);
+
 		
 	
-						$fields->addFieldToTab("Root.Content.Gallery", new HeaderField("Images for the gallery","2")); 
-		$fields->addFieldToTab("Root.Content.Gallery",$manager);
+		$fields->addFieldToTab("Root.Content.Gallery", new HeaderField("Images for the gallery","2")); 
+
 		
 		
 		
