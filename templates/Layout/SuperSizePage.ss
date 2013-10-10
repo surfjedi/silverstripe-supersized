@@ -1,7 +1,7 @@
 <!--Demo styles (you can delete this block)-->
 	
 	<ul id="demo-block">
-		<li><a href="http://buildinternet.com/project/supersized/" target="_blank"><img src="module_supersize/img/supersized-logo.png"/></a></li>
+		<li><a href="http://buildinternet.com/project/supersized/" target="_blank"><img src="supersized/img/supersized-logo.png"/></a></li>
 		<li></li>
 	</ul>
 	
@@ -29,7 +29,7 @@
 	<div id="controls-wrapper" class="load-item">
 		<div id="controls">
 			
-			<a id="play-button"><img id="pauseplay" src="module_supersize/img/pause.png"/></a>
+			<a id="play-button"><img id="pauseplay" src="supersized/img/pause.png"/></a>
 		
 			<!--Slide counter-->
 			<div id="slidecounter">
@@ -40,7 +40,7 @@
 			<div id="slidecaption"></div>
 			
 			<!--Thumb Tray button-->
-			<a id="tray-button"><img id="tray-arrow" src="module_supersize/img/button-tray-up.png"/></a>
+			<a id="tray-button"><img id="tray-arrow" src="supersized/img/button-tray-up.png"/></a>
 			
 			<!--Navigation-->
 			<ul id="slide-list"></ul>

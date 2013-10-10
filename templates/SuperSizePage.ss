@@ -6,8 +6,8 @@
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 		$MetaTags(false)
 		<link rel="shortcut icon" href="/favicon.ico" />
-				<link rel="stylesheet" href="module_supersize/css/supersized.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="module_supersize/theme/supersized.shutter.css" type="text/css" media="screen" />
+				<link rel="stylesheet" href="supersized/css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
 			</head>
 <body>
 
