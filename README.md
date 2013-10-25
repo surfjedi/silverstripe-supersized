@@ -1,4 +1,4 @@
-A gellery page using jquery supersized
+A gallery page using jquery supersized
 
 Requires: 
 
